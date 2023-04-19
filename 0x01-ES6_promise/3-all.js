@@ -1,8 +1,9 @@
-import { createUser, uploadPhoto } from './utils.js';
+import { createUser, uploadPhoto } from './utils';
 
-export default function handleProfileSignup () {
+export default function handleProfileSignup() {
   return Promise.all(
-    [uploadPhoto(), createUser()])
+    [uploadPhoto(), createUser()],
+  )
     .then((response) => {
       console.log(`${response[0].body} ${response[1].firstName} ${response[1].lastName}`);
     })
