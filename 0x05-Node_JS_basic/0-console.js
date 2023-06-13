@@ -9,6 +9,7 @@
 const displayMessage = (argv) => {
   // write a message to the stdout
   process.stdout.write(argv + '\n');
+  console.log(msg);
 };
 
 module.exports = displayMessage;
