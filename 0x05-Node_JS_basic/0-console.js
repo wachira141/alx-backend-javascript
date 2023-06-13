@@ -6,9 +6,9 @@
  * Return: print to the stdout
  */
 
-const displayMessage = (argv) => {
+const displayMessage = (msg) => {
   // write a message to the stdout
-  process.stdout.write(argv + '\n');
+  // process.stdout.write(argv + '\n');
   console.log(msg);
 };
 
