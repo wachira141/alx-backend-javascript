@@ -6,16 +6,24 @@ const assert = require('assert');
  */
 
 describe('calculateNumber', function () {
-  it('...', function () {
-    assert.equal(calculateNumber('SUM', 1.4, 4.5), 6);
+  describe('type === SUM', function() {
+    it('...', function () {
+      assert.equal(calculateNumber('SUM', 1.4, 4.5), 6);
+    });
   });
-  it('...', function () {
-    assert.equal(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
+  describe('type === SUBTRACT', function() {
+    it('...', function () {
+      assert.equal(calculateNumber('SUBTRACT', 1.4, 4.5), -4);
+    });
   });
-  it('...', function () {
-    assert.equal(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
+  describe('type === DIVIDE', function() {
+    it('...', function () {
+      assert.equal(calculateNumber('DIVIDE', 1.4, 4.5), 0.2);
+    });
   });
-  it('...', function () {
-    assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error');
+  describe('type === DIVIDE', function() {
+    it('...', function () {
+      assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error');
+    });
   });
 });

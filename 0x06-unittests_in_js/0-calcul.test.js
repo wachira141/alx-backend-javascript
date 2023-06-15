@@ -5,13 +5,19 @@ const assert = require('assert');
  */
 
 describe('calculateNumber', function () {
-  it('...', function () {
-    assert.equal(calculateNumber(1, 3), 4);
+  describe('type === SUM', () => {
+    it('...', function () {
+      assert.equal(calculateNumber(1, 3), 4);
+    });
   });
-  it('...', function () {
-    assert.equal(calculateNumber(1, 3.7), 5);
+  describe('type === SUM', () => {
+    it('...', function () {
+      assert.equal(calculateNumber(1, 3.7), 5);
+    }); 
   });
-  it('...', function () {
-    assert.equal(calculateNumber(1.5, 3.7), 5.2);
+  describe('type === SUM', () => {
+    it('...', function () {
+      assert.equal(calculateNumber(1.5, 3.7), 6);
+    }); 
   });
 });
